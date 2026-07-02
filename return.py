@@ -67,3 +67,51 @@ def add_item():
 
 add_item()
 print(items)
+#will print the entire list twice
+#because it is  a list so in the function
+#it is a pointer and not  a buplicate of the list.
+
+##question 6
+items = ["map", "key"]
+
+def replace_items():
+    items = ["potion"]
+    items.append("shield")
+    print(items)
+
+replace_items()
+print(items)
+#In this function it will print ['potion', 'shield']
+#  because it overwrites and creates a new list.
+#  print(items) - it will print ['map', 'key']
+
+
+#question 7
+points = 3
+
+def add_points():
+    global points
+    points = points + 7
+    points = points * 2
+    print(points)
+
+add_points()
+print(points)
+# will print 20 in both because global is updating its number
+
+#question 8
+status = "waiting"
+
+def outer():
+    status = "ready"
+
+    def inner():
+        status = "running"
+        print(status)
+
+    inner()
+    print(status)
+
+outer()
+print(status)
+
