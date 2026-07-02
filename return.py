@@ -201,32 +201,32 @@
 
 # ##2
 ## foo-1
-def Add_a_shipping_price(price):
-    return price + 10
+# def Add_a_shipping_price(price):
+#     return price + 10
 
-# foo 2
-def Doubling_the_price(price):
-    return ((price)* 2)
+# # foo 2
+# def Doubling_the_price(price):
+#     return price* 2
 
-Initial_price = 45
-Price_with_surcharge = Add_a_shipping_price(Initial_price)
-Price_with_doubling = Doubling_the_price(Price_with_surcharge)
-print(Price_with_doubling)
+# Initial_price = 45
+# Price_with_surcharge = Add_a_shipping_price(Initial_price)
+# Price_with_doubling = Doubling_the_price(Price_with_surcharge)
+# print(Price_with_doubling)
 
 
 # ##3
-# def Returning_a_first_name(name1 , name2):
-#     return f"{name1}, {name2}"
+def Returning_a_first_name(name1 , name2):
+    return f"{name1} - {name2}"
 
-# Returning_a_first_name("aaa","vvvv")
+def Converts_to_uppercase(name_string):
+    return name_string.upper()
 
-# def Converts_to_uppercase(name_string):
-#     return name_string.upper()
+name1 = "yehoshua"
+nami2 = "zalts"
 
-# full_name = Returning_a_first_name("josh", "dan")
-# uppercase_name = Converts_to_uppercase(full_name)
+add_nam = Returning_a_first_name(name1, nami2)
+big_name = Converts_to_uppercase(add_nam)
 
-# print(uppercase_name)
-
+print(big_name)
 
 
