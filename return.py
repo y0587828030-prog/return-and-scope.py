@@ -121,29 +121,63 @@
 #waiting- global variable
 
 
-# # questions 9
-coins = 10
+# # # questions 9
+# coins = 10
 
-def outer():
-    coins = 5
+# def outer():
+#     coins = 5
 
-    def inner():
-        nonlocal coins
-        coins = coins + 3
-        coins = coins * 2
-        print(coins)
+#     def inner():
+#         nonlocal coins
+#         coins = coins + 3
+#         coins = coins * 2
+#         print(coins)
 
-    inner()
-    print(coins)
+#     inner()
+#     print(coins)
 
-outer()
-print(coins)
+# outer()
+# print(coins)
 #
 #16-From the inner function (because it changed its previous value because of nonlocal)
 #16-From the outer function
 #10- Global variable
 
-# questionn 10
+# # questionn 10
+# score = 1
+# bag = ["key"]
+
+# def outer():
+#     score = 10
+#     bag.append("map")
+
+#     def inner():
+#         nonlocal score
+#         score = score + 5
+#         bag.append("coin")
+#         print(score)
+#         print(bag)
+
+#     score = score * 2
+#     inner()
+#     print(score)
+#     print(bag)
+
+# outer()
+# print(score)
+# print(bag)
+
+##25: (20 from outer variable +5 from inner variable)
+#['key', 'map', 'coin']- Because there was no variable with that name in the functions,
+#  the change was made globally
+
+#25- nonlocal created a change in the outer function
+#['key', 'map', 'coin']- Same as above
+
+#1- Global variable not changed
+#['key', 'map', 'coin']- Same as above
+
+
 
 
 
@@ -152,12 +186,16 @@ print(coins)
 # #part 2
 # ##1
 
-# # def meters_to_sm(metar):
-# #     centimets = metar * 100
-# #     return centimets
+def meters_to_sm(metar):
+    centimets = metar * 100
+    return centimets
 
-# # def format_movement_message(centimets):
-# #     return f"Robot moved 250 centimeters"
+
+def format_movement_message(centimets):
+    return f"Robot moved {centimets} centimeters"
+
+result = format_movement_message(meters_to_sm(1))
+print(result)
 
 
 
