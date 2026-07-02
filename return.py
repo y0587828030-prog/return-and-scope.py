@@ -214,19 +214,32 @@
 # print(Price_with_doubling)
 
 
-# ##3
-def Returning_a_first_name(name1 , name2):
-    return f"{name1} - {name2}"
+# # ##3
+# def Returning_a_first_name(first_name , sceand_name):
+#     return f"{first_name} - {sceand_name}"
 
-def Converts_to_uppercase(name_string):
-    return name_string.upper()
+# def Converts_to_uppercase(name_string):
+#     return name_string.upper()
 
-name1 = "yehoshua"
-nami2 = "zalts"
+# name1 = "yehoshua"
+# nami2 = "zalts"
 
-add_nam = Returning_a_first_name(name1, nami2)
-big_name = Converts_to_uppercase(add_nam)
+# add_nam = Returning_a_first_name(name1, nami2)
+# big_name = Converts_to_uppercase(add_nam)
 
-print(big_name)
+# print(big_name)
+
+##4
+def celsius_to_fahrenhit(celsius):
+    return(celsius * 9/5)+32
+
+def temperture_repotr(fahrenheit):
+    return f"the temperature is {fahrenheit} degrees: "
+
+celsius_num = 25
+fahr_value = celsius_to_fahrenhit(celsius_num)
+report = temperture_repotr(fahr_value)
+
+print(report)
 
 
