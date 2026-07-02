@@ -186,27 +186,32 @@
 # #part 2
 # ##1
 
-def meters_to_sm(metar):
-    centimets = metar * 100
-    return centimets
+# def meters_to_sm(metar):
+#     centimets = metar * 100
+#     return centimets
 
 
-def format_movement_message(centimets):
-    return f"Robot moved {centimets} centimeters"
+# def format_movement_message(centimets):
+#     return f"Robot moved {centimets} centimeters"
 
-result = format_movement_message(meters_to_sm(1))
-print(result)
+# result = format_movement_message(meters_to_sm(1))
+# print(result)
 
 
 
 # ##2
-# def Add_a_shipping_price(price):
-#     return price + 10
+## foo-1
+def Add_a_shipping_price(price):
+    return price + 10
 
-# # print(Add_a_shipping_price(10))
+# foo 2
+def Doubling_the_price(price):
+    return ((price)* 2)
 
-# def Doubling_the_price(price):
-#     return ((price)* 2)
+Initial_price = 45
+Price_with_surcharge = Add_a_shipping_price(Initial_price)
+Price_with_doubling = Doubling_the_price(Price_with_surcharge)
+print(Price_with_doubling)
 
 
 # ##3
