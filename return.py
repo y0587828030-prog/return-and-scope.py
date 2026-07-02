@@ -1,117 +1,145 @@
-#Question 1
-score = 10
+# #Question 1
+# score = 10
 
-def update_score():
-    score = 5
-    score = score + 3
-    print(score)
+# def update_score():
+#     score = 5
+#     score = score + 3
+#     print(score)
 
-update_score() # Print 8 because we only access what in the function
-print(score) # Print 10 because accessed outside the function
+# update_score() # Print 8 because we only access what in the function
+# print(score) # Print 10 because accessed outside the function
 
-#question 2
-name = "Agent"
-level = 2
+# #question 2
+# name = "Agent"
+# level = 2
 
-def show_info():
-    name = "Spy"
-    level = 4
-    power = level * 10
-    print(name)
-    print(power)
+# def show_info():
+#     name = "Spy"
+#     level = 4
+#     power = level * 10
+#     print(name)
+#     print(power)
 
-show_info()
-print(name)
-print(level)
+# show_info()
+# print(name)
+# print(level)
 
-#When the function is run,
-# it will print what is inside "spy" and 4*10- 40.
-#  print -(name & level) prints the global name and level -"agent" 2
+# #When the function is run,
+# # it will print what is inside "spy" and 4*10- 40.
+# #  print -(name & level) prints the global name and level -"agent" 2
 
-##question 3
-coins = 20
-def mission_reward(coins):
-    coins = coins + 10
-    coins = coins * 2
-    print(coins)
+# ##question 3
+# coins = 20
+# def mission_reward(coins):
+#     coins = coins + 10
+#     coins = coins * 2
+#     print(coins)
 
-mission_reward(5)
-print(coins)
-##When the function is run,
-#  it will print 30 (5 +10 then multiplied by 2)
-#in the printing of print (coins) - print 20 - the global
+# mission_reward(5)
+# print(coins)
+# ##When the function is run,
+# #  it will print 30 (5 +10 then multiplied by 2)
+# #in the printing of print (coins) - print 20 - the global
 
-##question 4
-health = 100
+# ##question 4
+# health = 100
 
-def take_damage(damage):
-    health = 100
-    health = health - damage
-    damage = damage + 5
-    print(health)
-    print(damage)
+# def take_damage(damage):
+#     health = 100
+#     health = health - damage
+#     damage = damage + 5
+#     print(health)
+#     print(damage)
 
-take_damage(30)
-print(health)
-##when printing the function in health it will print 70 (100 - 30)
-#and in damage it will print 35 (30+5)
-#print health will print 100, the global value.
+# take_damage(30)
+# print(health)
+# ##when printing the function in health it will print 70 (100 - 30)
+# #and in damage it will print 35 (30+5)
+# #print health will print 100, the global value.
 
-##question 5
-items = ["map", "key"]
+# ##question 5
+# items = ["map", "key"]
 
-def add_item():
-    items.append("torch")
-    items.append("coin")
-    print(items)
+# def add_item():
+#     items.append("torch")
+#     items.append("coin")
+#     print(items)
 
-add_item()
-print(items)
-#will print the entire list twice
-#because it is  a list so in the function
-#it is a pointer and not  a buplicate of the list.
+# add_item()
+# print(items)
+# #will print the entire list twice
+# #because it is  a list so in the function
+# #it is a pointer and not  a buplicate of the list.
 
-##question 6
-items = ["map", "key"]
+# ##question 6
+# items = ["map", "key"]
 
-def replace_items():
-    items = ["potion"]
-    items.append("shield")
-    print(items)
+# def replace_items():
+#     items = ["potion"]
+#     items.append("shield")
+#     print(items)
 
-replace_items()
-print(items)
-#In this function it will print ['potion', 'shield']
-#  because it overwrites and creates a new list.
-#  print(items) - it will print ['map', 'key']
+# replace_items()
+# print(items)
+# #In this function it will print ['potion', 'shield']
+# #  because it overwrites and creates a new list.
+# #  print(items) - it will print ['map', 'key']
 
 
-#question 7
-points = 3
+# #question 7
+# points = 3
 
-def add_points():
-    global points
-    points = points + 7
-    points = points * 2
-    print(points)
+# def add_points():
+#     global points
+#     points = points + 7
+#     points = points * 2
+#     print(points)
 
-add_points()
-print(points)
-# will print 20 in both because global is updating its number
+# add_points()
+# print(points)
+# # will print 20 in both because global is updating its number
 
-#question 8
-status = "waiting"
+# #question 8
+# status = "waiting"
 
-def outer():
-    status = "ready"
+# def outer():
+#     status = "ready"
 
-    def inner():
-        status = "running"
-        print(status)
+#     def inner():
+#         status = "running"
+#         print(status)
 
-    inner()
-    print(status)
+#     inner()
+#     print(status)
 
-outer()
-print(status)
+# outer()
+# print(status)
 
+# # questions 9
+
+
+
+
+
+# #part 2
+# ##1
+
+# # def meters_to_sm(metar):
+# #     centimets = metar * 100
+# #     return centimets
+
+# # def format_movement_message(centimets):
+# #     return f"Robot moved 250 centimeters"
+
+
+
+##2
+def Add_a_shipping_price(price):
+    return price + 10
+
+# print(Add_a_shipping_price(10))
+
+def Doubling_the_price(price):
+    Add_a_shipping_price(price)* 2
+
+print(Doubling_the_price(10))
