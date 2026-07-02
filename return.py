@@ -230,16 +230,33 @@
 # print(big_name)
 
 ##4
-def celsius_to_fahrenhit(celsius):
-    return(celsius * 9/5)+32
+# def celsius_to_fahrenhit(celsius):
+#     return(celsius * 9/5)+32
 
-def temperture_repotr(fahrenheit):
-    return f"the temperature is {fahrenheit} degrees: "
+# def temperture_repotr(fahrenheit):
+#     return f"the temperature is {fahrenheit} degrees: "
 
-celsius_num = 25
-fahr_value = celsius_to_fahrenhit(celsius_num)
-report = temperture_repotr(fahr_value)
+# celsius_num = 25
+# fahr_value = celsius_to_fahrenhit(celsius_num)
+# report = temperture_repotr(fahr_value)
 
-print(report)
+# print(report)
+
+##5
+def apply_damage(health, damage):
+    return health - damage
+
+def apply_healing(damaged_health, healing):
+    return damaged_health + healing
+
+start = 100
+damage_amount = 30
+healing_amount = 15
+
+current_health = apply_damage(start, damage_amount)
+
+final_health = apply_healing(current_health, healing_amount)
+print(final_health)
+
 
 
