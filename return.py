@@ -122,6 +122,28 @@
 
 
 # # questions 9
+coins = 10
+
+def outer():
+    coins = 5
+
+    def inner():
+        nonlocal coins
+        coins = coins + 3
+        coins = coins * 2
+        print(coins)
+
+    inner()
+    print(coins)
+
+outer()
+print(coins)
+#
+#16-From the inner function (because it changed its previous value because of nonlocal)
+#16-From the outer function
+#10- Global variable
+
+# questionn 10
 
 
 
@@ -139,21 +161,21 @@
 
 
 
-##2
-def Add_a_shipping_price(price):
-    return price + 10
+# ##2
+# def Add_a_shipping_price(price):
+#     return price + 10
 
-# print(Add_a_shipping_price(10))
+# # print(Add_a_shipping_price(10))
 
-def Doubling_the_price(price):
-    return ((price)* 2)
+# def Doubling_the_price(price):
+#     return ((price)* 2)
 
 
-##3
-def Returning_a_first_name(name1 , name2):
-    return f"{name1}, {name2}"
+# ##3
+# def Returning_a_first_name(name1 , name2):
+#     return f"{name1}, {name2}"
 
-Returning_a_first_name("aaa","vvvv")
+# Returning_a_first_name("aaa","vvvv")
 
 # def Converts_to_uppercase(name_string):
 #     return name_string.upper()
