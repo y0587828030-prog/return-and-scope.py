@@ -114,6 +114,12 @@
 
 # outer()
 # print(status)
+##Print
+
+#running- internal function
+#ready- external function
+#waiting- global variable
+
 
 # # questions 9
 
@@ -140,6 +146,22 @@ def Add_a_shipping_price(price):
 # print(Add_a_shipping_price(10))
 
 def Doubling_the_price(price):
-    Add_a_shipping_price(price)* 2
+    return ((price)* 2)
 
-print(Doubling_the_price(10))
+
+##3
+def Returning_a_first_name(name1 , name2):
+    return f"{name1}, {name2}"
+
+Returning_a_first_name("aaa","vvvv")
+
+# def Converts_to_uppercase(name_string):
+#     return name_string.upper()
+
+# full_name = Returning_a_first_name("josh", "dan")
+# uppercase_name = Converts_to_uppercase(full_name)
+
+# print(uppercase_name)
+
+
+
