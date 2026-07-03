@@ -280,25 +280,44 @@
 
 # print(messge_customer)
 
-##7
-def clean_password(password):
-    cleaned = password.strip()
-    return cleaned
+# ##7
+# def clean_password(password):
+#     cleaned = password.strip()
+#     return cleaned 
 
-def get_password_length(cleaned_password):
-    length = len(cleaned_password)
-    return length
+# def get_password_length(cleaned_password):
+#     length = len(cleaned_password)
+#     return length
 
-def is_password_valid(password_length):
-    if password_length >= 8:
-        return True
-    else:
-        return False
+# def is_password_valid(password_length):
+#     if password_length >= 8:
+#         return True
+#     else:
+#         return False
 
-user = "   yehoshya 1234   "
-clean = clean_password(user)
-final_length = get_password_length(clean)
-valisation = is_password_valid(final_length)
+# user = "   yehoshya1234   "
+# clean = clean_password(user)
+# final_length = get_password_length(clean)
+# valisation = is_password_valid(final_length)
 
-print(valisation)
-print(clean)
+# print(valisation)
+# # print(clean)
+
+##8
+def add_flat_bonus(base_grade):
+    new_grade = base_grade + 5
+    return new_grade
+
+def apply_factor(current_grade):
+    factored_grade = current_grade * 1.1
+    return factored_grade
+
+def cap_at_maximum(final_calculation):
+    capped_grade = min(final_calculation, 100)
+    return capped_grade
+
+student_starting_grade = 90
+grade_after_flat = add_flat_bonus(student_starting_grade)
+grade_after_factor = apply_factor(grade_after_flat)
+final_student_grade = cap_at_maximum(grade_after_factor)
+print(final_student_grade)
