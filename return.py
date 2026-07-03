@@ -260,22 +260,45 @@
 
 
 ##6
-def Price_calculation(price1, price2, price3):
-    return price1 + price2 + price3
+# def Price_calculation(price1, price2, price3):
+#     return price1 + price2 + price3
 
-def disconunt(price_orgunal):
-    return price_orgunal * 0.8
+# def disconunt(price_orgunal):
+#     return price_orgunal * 0.8
 
-def crate_message(final_price):
-    message = f"the final price 20% discount is: {final_price}"
-    return message 
+# def crate_message(final_price):
+#     message = f"the final price 20% discount is: {final_price}"
+#     return message 
 
-product1 = 50
-product2 = 100
-product3 = 50
+# product1 = 50
+# product2 = 100
+# product3 = 50
 
-price_total = Price_calculation(product1, product2, product3)
-after_discount = disconunt(price_total)
-messge_customer = crate_message(after_discount)
+# price_total = Price_calculation(product1, product2, product3)
+# after_discount = disconunt(price_total)
+# messge_customer = crate_message(after_discount)
 
-print(messge_customer)
+# print(messge_customer)
+
+##7
+def clean_password(password):
+    cleaned = password.strip()
+    return cleaned
+
+def get_password_length(cleaned_password):
+    length = len(cleaned_password)
+    return length
+
+def is_password_valid(password_length):
+    if password_length >= 8:
+        return True
+    else:
+        return False
+
+user = "   yehoshya 1234   "
+clean = clean_password(user)
+final_length = get_password_length(clean)
+valisation = is_password_valid(final_length)
+
+print(valisation)
+print(clean)
