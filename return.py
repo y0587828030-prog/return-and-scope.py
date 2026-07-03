@@ -242,21 +242,40 @@
 
 # print(report)
 
-##5
-def apply_damage(health, damage):
-    return health - damage
+# ##5
+# def apply_damage(health, damage):
+#     return health - damage
 
-def apply_healing(damaged_health, healing):
-    return damaged_health + healing
+# def apply_healing(damaged_health, healing):
+#     return damaged_health + healing
 
-start = 100
-damage_amount = 30
-healing_amount = 15
+# start = 100
+# damage_amount = 30
+# healing_amount = 15
 
-current_health = apply_damage(start, damage_amount)
+# current_health = apply_damage(start, damage_amount)
 
-final_health = apply_healing(current_health, healing_amount)
-print(final_health)
+# final_health = apply_healing(current_health, healing_amount)
+# print(final_health)
 
 
+##6
+def Price_calculation(price1, price2, price3):
+    return price1 + price2 + price3
 
+def disconunt(price_orgunal):
+    return price_orgunal * 0.8
+
+def crate_message(final_price):
+    message = f"the final price 20% discount is: {final_price}"
+    return message 
+
+product1 = 50
+product2 = 100
+product3 = 50
+
+price_total = Price_calculation(product1, product2, product3)
+after_discount = disconunt(price_total)
+messge_customer = crate_message(after_discount)
+
+print(messge_customer)
