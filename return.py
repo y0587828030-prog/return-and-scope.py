@@ -303,21 +303,40 @@
 # print(valisation)
 # # print(clean)
 
-##8
-def add_flat_bonus(base_grade):
-    new_grade = base_grade + 5
-    return new_grade
+# ##8
+# def add_flat_bonus(base_grade):
+#     new_grade = base_grade + 5
+#     return new_grade
 
-def apply_factor(current_grade):
-    factored_grade = current_grade * 1.1
-    return factored_grade
+# def apply_factor(current_grade):
+#     factored_grade = current_grade * 1.1
+#     return factored_grade
 
-def cap_at_maximum(final_calculation):
-    capped_grade = min(final_calculation, 100)
-    return capped_grade
+# def cap_at_maximum(final_calculation):
+#     capped_grade = min(final_calculation, 100)
+#     return capped_grade
 
-student_starting_grade = 90
-grade_after_flat = add_flat_bonus(student_starting_grade)
-grade_after_factor = apply_factor(grade_after_flat)
-final_student_grade = cap_at_maximum(grade_after_factor)
-print(final_student_grade)
+# student_starting_grade = 90
+# grade_after_flat = add_flat_bonus(student_starting_grade)
+# grade_after_factor = apply_factor(grade_after_flat)
+# final_student_grade = cap_at_maximum(grade_after_factor)
+# print(final_student_grade)
+
+##9
+def returns_lowercase_letters(sentence):
+    return sentence.lower()
+
+def count_letter_a(sentence):
+    return sentence.count("a")
+
+def messag(count):
+    message = f"The letter a appears {count} times"
+    return message
+
+sentence = "APPLE AND BANANA ARE TASTY" 
+
+loeer = returns_lowercase_letters(sentence)
+count = count_letter_a(loeer)
+messag_final = messag(count)
+
+print(messag_final)
