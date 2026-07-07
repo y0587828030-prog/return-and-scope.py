@@ -417,3 +417,25 @@ part3 = join_with_underscore(part1,part2)
 part4 = make_lowercase(part3)
 
 print(part4)
+
+##fo 12
+def calculate_fuel(distance, fuel_per_km):
+    return distance * fuel_per_km
+
+def price_to_gas(gas, price):
+    return gas * price
+
+def price1(total_cost, num_passengers):
+    return total_cost / num_passengers
+
+distance = 150
+fuel = 0.08
+price = 7.20
+passeng = 3
+
+liters = calculate_fuel(distance,fuel)
+total = price_to_gas(liters,price)
+person = price1(total,passeng)
+
+print(person)
+
