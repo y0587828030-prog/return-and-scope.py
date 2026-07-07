@@ -198,7 +198,6 @@
 # print(result)
 
 
-
 # ##2
 ## foo-1
 # def Add_a_shipping_price(price):
@@ -229,6 +228,18 @@
 
 # print(big_name)
 
+# def num(first_name, sceand_name):
+#     return f"{first_name} {sceand_name}"
+
+# def upper(name):
+#     return name.upper()
+
+# name1 = "yehosh"
+# name2 = "zalts"
+# add_name = num(name1,name2)
+# big = upper(add_name)
+# print(big)
+
 ##4
 # def celsius_to_fahrenhit(celsius):
 #     return(celsius * 9/5)+32
@@ -242,21 +253,144 @@
 
 # print(report)
 
-##5
-def apply_damage(health, damage):
-    return health - damage
+def cel(cel):
+    return(cel * 9/5)+32
 
-def apply_healing(damaged_health, healing):
-    return damaged_health + healing
+def mas(fr):
+    return f"the fr{fr}"
+
+ce = 35
+cel_to = cel(ce)
+mas_1 = mas(cel_to)
+print(mas_1)
+
+# ##5
+# def apply_damage(health, damage):
+#     return health - damage
+
+# def apply_healing(damaged_health, healing):
+#     return damaged_health + healing
+
+# start = 100
+# damage_amount = 30
+# healing_amount = 15
+
+# current_health = apply_damage(start, damage_amount)
+
+# final_health = apply_healing(current_health, healing_amount)
+# print(final_health)
+
+def  apply(healt, dam):
+    return healt - dam
+
+def apply_healing(dam_health, healing):
+    return dam_health + healing
 
 start = 100
-damage_amount = 30
-healing_amount = 15
+dam = 30
+healing = 15
+curr = apply(start,dam)
+final = apply_healing(curr, healing)
+print(final)
+##6
+# def Price_calculation(price1, price2, price3):
+#     return price1 + price2 + price3
 
-current_health = apply_damage(start, damage_amount)
+# def disconunt(price_orgunal):
+#     return price_orgunal * 0.8
 
-final_health = apply_healing(current_health, healing_amount)
-print(final_health)
+# def crate_message(final_price):
+#     message = f"the final price 20% discount is: {final_price}"
+#     return message 
 
+# product1 = 50
+# product2 = 100
+# product3 = 50
 
+# price_total = Price_calculation(product1, product2, product3)
+# after_discount = disconunt(price_total)
+# messge_customer = crate_message(after_discount)
 
+# print(messge_customer)
+
+# ##7
+# def clean_password(password):
+#     cleaned = password.strip()
+#     return cleaned 
+
+# def get_password_length(cleaned_password):
+#     length = len(cleaned_password)
+#     return length
+
+# def is_password_valid(password_length):
+#     if password_length >= 8:
+#         return True
+#     else:
+#         return False
+
+# user = "   yehoshya1234   "
+# clean = clean_password(user)
+# final_length = get_password_length(clean)
+# valisation = is_password_valid(final_length)
+
+# print(valisation)
+# # print(clean)
+
+# ##8
+# def add_flat_bonus(base_grade):
+#     new_grade = base_grade + 5
+#     return new_grade
+
+# def apply_factor(current_grade):
+#     factored_grade = current_grade * 1.1
+#     return factored_grade
+
+# def cap_at_maximum(final_calculation):
+#     capped_grade = min(final_calculation, 100)
+#     return capped_grade
+
+# student_starting_grade = 90
+# grade_after_flat = add_flat_bonus(student_starting_grade)
+# grade_after_factor = apply_factor(grade_after_flat)
+# final_student_grade = cap_at_maximum(grade_after_factor)
+# print(final_student_grade)
+
+# ##9
+# def returns_lowercase_letters(sentence):
+#     return sentence.lower()
+
+# def count_letter_a(sentence):
+#     return sentence.count("a")
+
+# def messag(count):
+#     message = f"The letter a appears {count} times"
+#     return message
+
+# sentence = "APPLE AND BANANA ARE TASTY" 
+
+# loeer = returns_lowercase_letters(sentence)
+# count = count_letter_a(loeer)
+# messag_final = messag(count)
+
+# print(messag_final)
+
+## foo 10
+def Calculating_an_amount(price, amount):
+    return price * amount
+
+def Cost_of_maintenance(price):
+    return price - 15
+
+def Checks_if_greater_than_one_hundred(num):
+    if num > 100:
+        return True
+    else:
+        return False
+
+price = 115
+amount = 10
+total = Calculating_an_amount(price,amount)
+discount = Cost_of_maintenance(total)
+tast = Checks_if_greater_than_one_hundred(discount)
+
+print(tast)
