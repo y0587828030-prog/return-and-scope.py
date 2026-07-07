@@ -394,3 +394,26 @@ discount = Cost_of_maintenance(total)
 tast = Checks_if_greater_than_one_hundred(discount)
 
 print(tast)
+
+##fo 11
+def get_first_3_of_first_name(first_name):
+    return first_name[:3]
+
+def get_first_3_of_last_name(name):
+    return name[:3]
+
+def join_with_underscore(name1, name2):
+   return f"{name1}_{name2}"
+
+def make_lowercase(name):
+    return name.lower()
+
+name = "YEHOSHUA"
+name2 = "ZALTZ"
+
+part1 =get_first_3_of_first_name(name)
+part2= get_first_3_of_last_name(name2)
+part3 = join_with_underscore(part1,part2)
+part4 = make_lowercase(part3)
+
+print(part4)
