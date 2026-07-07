@@ -198,7 +198,6 @@
 # print(result)
 
 
-
 # ##2
 ## foo-1
 # def Add_a_shipping_price(price):
@@ -229,6 +228,18 @@
 
 # print(big_name)
 
+# def num(first_name, sceand_name):
+#     return f"{first_name} {sceand_name}"
+
+# def upper(name):
+#     return name.upper()
+
+# name1 = "yehosh"
+# name2 = "zalts"
+# add_name = num(name1,name2)
+# big = upper(add_name)
+# print(big)
+
 ##4
 # def celsius_to_fahrenhit(celsius):
 #     return(celsius * 9/5)+32
@@ -241,6 +252,17 @@
 # report = temperture_repotr(fahr_value)
 
 # print(report)
+
+def cel(cel):
+    return(cel * 9/5)+32
+
+def mas(fr):
+    return f"the fr{fr}"
+
+ce = 35
+cel_to = cel(ce)
+mas_1 = mas(cel_to)
+print(mas_1)
 
 # ##5
 # def apply_damage(health, damage):
@@ -258,7 +280,18 @@
 # final_health = apply_healing(current_health, healing_amount)
 # print(final_health)
 
+def  apply(healt, dam):
+    return healt - dam
 
+def apply_healing(dam_health, healing):
+    return dam_health + healing
+
+start = 100
+dam = 30
+healing = 15
+curr = apply(start,dam)
+final = apply_healing(curr, healing)
+print(final)
 ##6
 # def Price_calculation(price1, price2, price3):
 #     return price1 + price2 + price3
@@ -322,21 +355,42 @@
 # final_student_grade = cap_at_maximum(grade_after_factor)
 # print(final_student_grade)
 
-##9
-def returns_lowercase_letters(sentence):
-    return sentence.lower()
+# ##9
+# def returns_lowercase_letters(sentence):
+#     return sentence.lower()
 
-def count_letter_a(sentence):
-    return sentence.count("a")
+# def count_letter_a(sentence):
+#     return sentence.count("a")
 
-def messag(count):
-    message = f"The letter a appears {count} times"
-    return message
+# def messag(count):
+#     message = f"The letter a appears {count} times"
+#     return message
 
-sentence = "APPLE AND BANANA ARE TASTY" 
+# sentence = "APPLE AND BANANA ARE TASTY" 
 
-loeer = returns_lowercase_letters(sentence)
-count = count_letter_a(loeer)
-messag_final = messag(count)
+# loeer = returns_lowercase_letters(sentence)
+# count = count_letter_a(loeer)
+# messag_final = messag(count)
 
-print(messag_final)
+# print(messag_final)
+
+## foo 10
+def Calculating_an_amount(price, amount):
+    return price * amount
+
+def Cost_of_maintenance(price):
+    return price - 15
+
+def Checks_if_greater_than_one_hundred(num):
+    if num > 100:
+        return True
+    else:
+        return False
+
+price = 115
+amount = 10
+total = Calculating_an_amount(price,amount)
+discount = Cost_of_maintenance(total)
+tast = Checks_if_greater_than_one_hundred(discount)
+
+print(tast)
